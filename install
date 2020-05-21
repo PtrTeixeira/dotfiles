@@ -1,0 +1,19 @@
+#!/bin/bash
+set -eo pipefail
+
+if [ ! -d "$HOME/bin" ] ; then
+  echo "Creating $HOME/bin directory"
+else
+  echo "$HOME/bin already exists"
+fi
+
+if [ ! -x "$HOME/bin/chezmoi" ] ; then
+  echo "Installing chezmoi"
+  wget -qO /tmp/chezmoi.tgz https://github.com/twpayne/chezmoi/releases/download/v1.8.1/chezmoi_1.8.1_linux_amd64.tar.gz
+  echo 'db5ce7998a2781704b4afab7d7303179c628bff475a315d9b0afea911c5eb514  /tmp/chezmoi.tgz' | shasum -c
+  tar xf /tmp/chezmoi.tgz -C "$HOME/bin" chezmoi
+else
+  echo "Chezmoi already installed."
+fi
+
+exec "$HOME/bin/chezmoi"
