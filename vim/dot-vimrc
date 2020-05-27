@@ -1,0 +1,28 @@
+set nocompatible
+
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-commentary'
+Plug 'spf13/vim-autoclose'
+Plug 'tpope/vim-surround'
+Plug 'sheerun/vim-polyglot'
+Plug 'altercation/vim-colors-solarized'
+call plug#end()
+
+syntax enable
+set relativenumber  "Show line numbers
+set showcmd         "Show intermediate commands
+set laststatus=2    "Always show statusline
+
+set tabstop=2       "Visual spaces per tab
+set softtabstop=2   "Actual spaces per tab
+set expandtab       "Tabs are spaces
+set shiftwidth=2     "Autoindent width
+
+" Color Scheme stuff
+let g:solarized_termtrans = 1
+set background=dark
+colorscheme solarized
+
+" Clear search color with space
+nnoremap <Space> :set hlsearch!<CR>

@@ -15,5 +15,10 @@ if [ ! -d "$HOME/bin" ] ; then
   echo "Creating $HOME/bin directory"
 fi
 
-stow -v -t ~ --dotfiles tmux zsh
-antibody bundle < ~/.zsh_plugins > ~/.zsh_plugins.sh
+stow -v -t ~ --dotfiles tmux vim zsh
+
+if [ ! -f "$HOME/.zsh_plugins.sh" ] ; then
+  antibody bundle < ~/.zsh_plugins > ~/.zsh_plugins.sh
+else
+  echo "$HOME/.zsh_plugins.sh already exists, will not overwrite"
+fi
