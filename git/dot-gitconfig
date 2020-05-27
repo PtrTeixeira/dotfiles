@@ -1,0 +1,16 @@
+[user]
+  name = Peter Teixeira
+  email = PtrTeixeira@gmail.com
+
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+
+[pager]
+  diff = ~/bin/diff-highlight | less
+
+[push]
+  default = simple
+
+[credential]
+  helper = cache

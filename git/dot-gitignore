@@ -1,0 +1,41 @@
+# Compiled Files
+*.class
+*.exe
+*.dll
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs
+*.log
+
+# IDE generated files
+.idea/
+*.iml
+*.iws
+out/
+.vscode/
+
+# Python stuff
+__pycache__/
+
+# Vim generated files
+[._]*s[a-w][a-z]
+[._]s[a-w][a-z]
+Session.vim
+*~
+
+# OS Specific files
+.DS_Store
+*.lnk
+*.msi
+
+# filewatcher conf file
+modd.conf
