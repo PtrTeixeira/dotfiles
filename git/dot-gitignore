@@ -25,6 +25,7 @@ out/
 
 # Python stuff
 __pycache__/
+venv/
 
 # Vim generated files
 [._]*s[a-w][a-z]
