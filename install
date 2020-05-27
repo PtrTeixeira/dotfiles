@@ -1,8 +1,19 @@
 #!/bin/bash
+set -eo pipefail
 
 if [ ! -x "$(command -v stow)" ] ; then
   echo 'You must install stow to use this'
   exit
 fi
 
-stow -vv -t ~ --dotfiles tmux zsh
+if [ ! -x "$(command -v antibody)" ] ; then
+  echo 'You must install antibody to use this'
+  exit
+fi
+
+if [ ! -d "$HOME/bin" ] ; then
+  echo "Creating $HOME/bin directory"
+fi
+
+stow -v -t ~ --dotfiles tmux zsh
+antibody bundle < ~/.zsh_plugins > ~/.zsh_plugins.sh
