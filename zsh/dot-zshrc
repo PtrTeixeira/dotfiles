@@ -15,7 +15,7 @@ setopt autocd
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
 
-alias ls="ls --group-directories-first --color=tty"
+alias ls="ls --color=tty"
 
 bindkey -e
 
