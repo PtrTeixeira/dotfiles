@@ -5,4 +5,4 @@ if [ ! -x "$(command -v stow)" ] ; then
   exit
 fi
 
-stow -vv -t ~ --dotfiles tmux
+stow -vv -t ~ --dotfiles tmux zsh
