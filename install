@@ -16,6 +16,7 @@ if [ ! -d "$HOME/bin" ] ; then
 fi
 
 stow -v -t ~ --dotfiles git tmux vim zsh
+stow -v -t ~/bin bin
 
 if [ ! -f "$HOME/.zsh_plugins.sh" ] ; then
   antibody bundle < ~/.zsh_plugins > ~/.zsh_plugins.sh
