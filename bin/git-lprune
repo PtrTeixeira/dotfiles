@@ -1,0 +1,6 @@
+#!/bin/bash
+set -eo pipefail
+
+git for-each-ref --format '%(upstream:track) %(refname:short)' \
+  | grep '^\[gone\]' \
+  | cut -d' ' -f2 -
