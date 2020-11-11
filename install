@@ -13,10 +13,17 @@ fi
 
 if [ ! -d "$HOME/bin" ] ; then
   echo "Creating $HOME/bin directory"
+  mkdir -p "$HOME/bin"
+fi
+
+if [ ! -d "$HOME/.config/alacritty" ] ; then
+  echo "Creating $HOME/.config/alacritty directory"
+  mkdir -p "$HOME/.config/alacritty"
 fi
 
 stow -v -t ~ --dotfiles git tmux vim zsh
 stow -v -t ~/bin bin
+stow -v -t ~/.config/alacritty alacritty
 
 if [ ! -f "$HOME/.zsh_plugins.sh" ] ; then
   antibody bundle < ~/.zsh_plugins > ~/.zsh_plugins.sh
