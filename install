@@ -38,7 +38,7 @@ fi
 
 if [ ! -f "$HOME/.dir_colors" ] ; then
   echo "Creating .dir_colors file"
-  wget https://github.com/arcticicestudio/nord-dircolors/releases/download/v0.2.0/dir_colors -O "$HOME/.dir_colors"
+  wget https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark -O "$HOME/.dir_colors"
 fi
 
 if [ ! -f "$HOME/.local/share/nvim/site/autoload/plug.vim" ] ; then
