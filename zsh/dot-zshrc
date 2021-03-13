@@ -17,6 +17,8 @@ setopt HIST_REDUCE_BLANKS
 unsetopt BEEP
 
 alias ls="ls --color=tty"
+alias view="/usr/bin/nvim -R"
+alias vim="/usr/bin/nvim"
 
 bindkey -e
 
@@ -24,6 +26,7 @@ export TERM="screen-256color"
 export HISTFILE="$HOME/.zsh_history"
 export HISTSIZE=1000
 export SAVEHIST=1000
+export EDITOR=/usr/bin/nvim
 
 [[ -r ~/.dir_colors ]] && eval $(dircolors ~/.dir_colors)
 
