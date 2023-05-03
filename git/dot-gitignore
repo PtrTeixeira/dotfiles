@@ -40,3 +40,13 @@ Session.vim
 
 # filewatcher conf file
 modd.conf
+
+
+.gradle-enterprise/
+
+# Maven generated files
+target/
+.mvn/
+
+# Other generated files
+node_modules/

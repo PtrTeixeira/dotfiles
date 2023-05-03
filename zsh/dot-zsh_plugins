@@ -1,3 +1,4 @@
 robbyrussell/oh-my-zsh path:plugins/git
+zsh-users/zsh-completions
 zsh-users/zsh-syntax-highlighting
 romkatv/powerlevel10k

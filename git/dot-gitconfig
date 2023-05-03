@@ -1,10 +1,11 @@
 [user]
   name = Peter Teixeira
-  email = PtrTeixeira@gmail.com
+  email = pteixeira@hubspot.com
 
 [core]
   editor = nvim
   excludesfile = ~/.gitignore
+  hooksPath = /Users/pteixeira/.git_hooks
 
 [pager]
   diff = ~/bin/diff-highlight | less
