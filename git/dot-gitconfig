@@ -1,17 +1,23 @@
 [user]
   name = Peter Teixeira
   email = pteixeira@hubspot.com
+	signingkey = /Users/pteixeira/.ssh/id_ed25519.pub
 
 [core]
   editor = nvim
   excludesfile = ~/.gitignore
-  hooksPath = /Users/pteixeira/.git_hooks
+	hooksPath = /Users/pteixeira/.git_hooks
 
 [pager]
   diff = ~/bin/diff-highlight | less
 
 [push]
   default = simple
+	autoSetupRemote = true
 
 [credential]
   helper = cache
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true

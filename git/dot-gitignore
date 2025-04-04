@@ -26,6 +26,8 @@ out/
 # Python stuff
 __pycache__/
 venv/
+dist/
+*.egg-info/
 
 # Vim generated files
 [._]*s[a-w][a-z]
@@ -43,6 +45,7 @@ modd.conf
 
 
 .gradle-enterprise/
+.gradle/
 
 # Maven generated files
 target/
@@ -50,3 +53,53 @@ target/
 
 # Other generated files
 node_modules/
+.develocity/
+/build
+# added by nex
+*.swp
+# added by nex
+*.orig
+# added by nex
+*.pyc
+# added by nex
+*.egg-info
+# added by nex
+.pydevproject
+# added by nex
+.venv
+# added by nex
+*.egg
+# added by nex
+.ipynb_checkpoints
+# added by nex
+.coverage
+# added by nex
+.coverage.*
+# added by nex
+nosetests.xml
+# added by nex
+.Python
+# added by nex
+pip-log.txt
+# added by nex
+npm-debug.log
+# added by nex
+yarn-error.log
+# added by nex
+*.hprof
+# added by nex
+.classpath
+# added by nex
+.project
+# added by nex
+.settings
+# added by nex
+.factorypath
+# added by nex
+.checkstyle
+# added by nex
+.idea
+# added by nex
+hadoop-keytabs/
+# added by nex
+hadoop-krb5-configs/

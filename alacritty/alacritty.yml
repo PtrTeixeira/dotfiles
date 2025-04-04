@@ -4,7 +4,7 @@ env:
 # Font configuration
 font:
   normal:
-    family: Fira Code
+    family: FiraCode
 
   # Point size
   size: 14.0
