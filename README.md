@@ -4,13 +4,11 @@ Just a bunch of dotfiles
 
 ## Installation
 
-You'll need to install the following on your own
-(thus far):
+You'll need to install the following on your own:
 
-- nvim
-- antibody
-- VimPlug
+- antidote
+- neovim
 - stow
-- git (duh)
+- git
 
 Potentially other things I've forgotten?
