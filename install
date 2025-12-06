@@ -1,13 +1,8 @@
-#!/bin/bash
+#!/bin/zsh
 set -eo pipefail
 
 if [ ! -x "$(command -v stow)" ] ; then
   echo 'You must install stow to use this'
-  exit
-fi
-
-if [ ! -x "$(command -v antibody)" ] ; then
-  echo 'You must install antibody to use this'
   exit
 fi
 
