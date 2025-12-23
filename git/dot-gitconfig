@@ -6,9 +6,6 @@
   editor = nvim
   excludesfile = ~/.gitignore
 
-[pager]
-  diff = ~/bin/diff-highlight | less
-
 [push]
   default = simple
 
